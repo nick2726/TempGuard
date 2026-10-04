@@ -1,0 +1,35 @@
+# Build outputs
+build/
+bin/
+obj/
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.order
+*.symvers
+.tmp_versions/
+.*.cmd
+.cache.mk
+*.dwo
+*.su
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile.cmake
+
+# Logs and runtime artifacts
+logs/*.log
+logs/*.csv
+!logs/.gitkeep
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store

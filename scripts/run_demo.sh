@@ -7,7 +7,11 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 DEVICE="/dev/temp_sensor"
-APP="${ROOT_DIR}/build/src/ltempguard_app"
+if [[ -f "${ROOT_DIR}/build/ltempguard_app" ]]; then
+    APP="${ROOT_DIR}/build/ltempguard_app"
+else
+    APP="${ROOT_DIR}/build/src/ltempguard_app"
+fi
 
 echo "============================================================"
 echo "    LTempGuard - Live Demonstration & State Transition Test"

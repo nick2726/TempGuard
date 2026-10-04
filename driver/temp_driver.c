@@ -152,13 +152,13 @@ static int format_mC_to_ascii(int32_t mC, char *buf, size_t buf_size)
 
 static int temp_driver_open(struct inode *inodep, struct file *filep)
 {
-    pr_debug("LTEMPGUARD: Device /dev/%s opened (pid: %d)\n", DRIVER_NAME, current->pid);
+    pr_info("LTEMPGUARD: Device /dev/%s opened (pid: %d)\n", DRIVER_NAME, current->pid);
     return 0;
 }
 
 static int temp_driver_release(struct inode *inodep, struct file *filep)
 {
-    pr_debug("LTEMPGUARD: Device /dev/%s released (pid: %d)\n", DRIVER_NAME, current->pid);
+    pr_info("LTEMPGUARD: Device /dev/%s released (pid: %d)\n", DRIVER_NAME, current->pid);
     return 0;
 }
 

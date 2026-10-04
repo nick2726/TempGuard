@@ -228,8 +228,8 @@ TempGuard/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/LTempGuard.git
-cd LTempGuard
+git clone https://github.com/nick2726/TempGuard.git
+cd TempGuard
 
 # Install required build packages (Ubuntu/Debian)
 sudo apt update
